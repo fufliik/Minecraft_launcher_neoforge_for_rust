@@ -1,14 +1,12 @@
-use std::env;
-
 use lyceris::minecraft::{
     config::ConfigBuilder,
     emitter::{Emitter, Event},
     install::install,
     launch::launch,
-
-
 };
 use lyceris::minecraft::loader::neoforge::NeoForge;
+
+use std::path::PathBuf;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -29,14 +27,16 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         })
         .await;
 
-    let current_dir = env::current_dir()?;
+    let local_appdata = std::env::var("LOCALAPPDATA")?;
+
 
     let config = ConfigBuilder::new(
-        current_dir.join("game"),
+        PathBuf::from(local_appdata).join("OliviaLauncher"),
         "1.21.1".into(),
         lyceris::auth::AuthMethod::Offline {
             username: "Lyceris".into(),
             uuid: None,
+
         },
     )
         .loader(NeoForge("21.1.233".to_string()).into())
