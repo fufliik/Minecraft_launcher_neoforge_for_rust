@@ -1,14 +1,14 @@
+use std::path::PathBuf;
+mod login;
+
+use lyceris::minecraft::loader::neoforge::NeoForge;
+use lyceris::minecraft::config::Memory;
 use lyceris::minecraft::{
     config::ConfigBuilder,
     emitter::{Emitter, Event},
     install::install,
     launch::launch,
 };
-use lyceris::minecraft::loader::neoforge::NeoForge;
-
-use std::path::PathBuf;
-use lyceris::minecraft::config::Memory;
-
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let emitter = Emitter::default();
@@ -52,5 +52,3 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     Ok(())
 }
-
-//test 1
