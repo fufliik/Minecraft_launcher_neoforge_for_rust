@@ -7,6 +7,7 @@ use lyceris::minecraft::{
 use lyceris::minecraft::loader::neoforge::NeoForge;
 
 use std::path::PathBuf;
+use lyceris::minecraft::config::Memory;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -36,11 +37,13 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         lyceris::auth::AuthMethod::Offline {
             username: "Lyceris".into(),
             uuid: None,
-
         },
+
     )
+        .memory(Memory::Gigabyte(6))
         .loader(NeoForge("21.1.233".to_string()).into())
         .build();
+
 
     install(&config, Some(&emitter)).await?;
 
