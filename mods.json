@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Example Mod",
+    "url": "https://example.com/mods/example.jar"
+  },
+  {
+    "name": "Another Mod",
+    "url": "https://example.com/mods/another.jar"
+  }
+]
