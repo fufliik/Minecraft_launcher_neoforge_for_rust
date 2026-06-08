@@ -1,12 +1,5 @@
 [
-  {
-    "name": "test 1",
-    "url": "https://www.curseforge.com/minecraft/mc-mods/create/download/7963363"
-  },
-  {
-    "name": "test 2 ",
-    "url": "https://cdn.modrinth.com/data/LNytGWDc/versions/UjX6dr61/create-1.21.1-6.0.10.jar?mr_download_reason=standalone"
-  },
+
   {
     "name": "test 3 ",
     "url": "https://github.com/fufliik/Minecraft_launcher_neoforge_for_rust/raw/refs/heads/master/aeronautics_translation-1.1.jar"
