@@ -1,3 +1,15 @@
 [
-    "https://raw.githubusercontent.com/fufliik/Minecraft_launcher_neoforge_for_rust/master/mods/aeronautics_translation-1.1.jar"
+  {
+    "name": "create-1.21.1-6.0.10.jar",
+    "url": "https://www.dropbox.com/scl/fi/2o4ltd4atwhqr9a2d6irs/create-1.21.1-6.0.10.jar?rlkey=cw6xucfewnpw8tk37zqtr1q5i&st=pl4lqhn8&dl=1",
+  },
+  {
+    "name": "create-aeronautics-bundled-1.21.1-1.2.1.jar",
+    "url": "https://www.dropbox.com/scl/fi/ttymskt3de1rgvv23ys0g/create-aeronautics-bundled-1.21.1-1.2.1.jar?rlkey=dhqqktgkihrgayr77zvnt9e50&st=0tnbefb4&dl=1"
+  },
+  {
+    "name": "sable-neoforge-1.21.1-1.2.2.jar",
+    "url": "https://www.dropbox.com/scl/fi/lni0ne4nkcsex6bd72ilf/sable-neoforge-1.21.1-1.2.2.jar?rlkey=xc6rhhu7xzdht7gamf7m9e1c3&st=f61yla8n&dl=1"
+  }
+    
 ]
